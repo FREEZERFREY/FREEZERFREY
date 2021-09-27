@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(img/bg4.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.card{
+    position: relative;
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    height: 400px;
+    width: 270px;
+    margin-right: 3rem;
+    border-radius: 10px;
+}
+.card:hover .gradient{
+    opacity: 1;
+}
+.gradient{
+    position: absolute;
+    background-image: linear-gradient(0deg, #3f9c2d, transparent);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: 10px;
+}
+.info{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2rem;
+    margin-top: 3rem;
+}
+.text{
+    color: rgb(211,211,211);
+    text-align: center;
+    padding: 25px;
+    margin: 20px;
+}
+.title{
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 25px;
+    margin: 20px;
+}
+.time{
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-align: center;
+    padding: 25px;
+    margin: 1px;
+    font-size: 20px;
+
+}
+.price{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 42px;
+}
+
